@@ -13,10 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Greeting
-        run: echo Start unit tests
-
-      - name: Farewell
+      - name: Connecting via SSH
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          ssh root@167.172.176.155
+          whoami
