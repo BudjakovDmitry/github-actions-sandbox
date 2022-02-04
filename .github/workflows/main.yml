@@ -8,13 +8,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  # This workflow contains a single job called "build"
   ssh-connect:
     runs-on: ubuntu-latest
     
     steps:
       - name: Connecting via SSH
-        run: |
-          ssh -tt root@167.172.176.155
-          .:{5}!/Zq(K98Fk7E$eR
-          whoami
+        uses: appleboy/ssh-action@master
+        with:
+          host: 167.172.176.155
+          username: root
+          password: .:{5}!/Zq(K98Fk7E$eR
+          script: whoami
