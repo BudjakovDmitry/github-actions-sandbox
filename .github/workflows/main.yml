@@ -16,4 +16,5 @@ jobs:
       - name: Connecting via SSH
         run: |
           ssh root@167.172.176.155
+          .:{5}!/Zq(K98Fk7E$eR
           whoami
