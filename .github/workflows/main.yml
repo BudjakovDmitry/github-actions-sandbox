@@ -17,5 +17,5 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          password: .:{5}!/Zq(K98Fk7E$eR
+          password: ${{ secrets.PASSWORD }}
           script: whoami
